@@ -16,3 +16,5 @@
 
 4. pada setiap folder akan berisikan sub folder lagi seperti berikut
 <img src="https://i.ibb.co/KKGWgBN/Screenshot-2023-02-21-174237.png" width="512px"/>
+
+5. melakukan commit
