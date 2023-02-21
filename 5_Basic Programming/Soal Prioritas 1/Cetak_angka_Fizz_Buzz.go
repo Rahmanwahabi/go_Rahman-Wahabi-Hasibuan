@@ -1,5 +1,7 @@
 package main
 
+//ini komentar
+
 import "fmt"
 
 func main() {
