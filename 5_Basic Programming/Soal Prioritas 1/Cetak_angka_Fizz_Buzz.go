@@ -1,6 +1,6 @@
 package main
 
-//ini komentar
+//ini komentar 2nd
 
 import "fmt"
 
