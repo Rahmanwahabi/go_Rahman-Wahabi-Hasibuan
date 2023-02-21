@@ -12,4 +12,4 @@
     - 2_Soal Software_Testing_Fundamental
     - 3_Soal_Testing_Documentation
     - seterusnya sesuai dengan nama soal yang kalian kerjakan. buat folder tersebut sampai soal rest API.
-<img src="https://https://i.ibb.co/8M8jqPB/Screenshot-2023-02-21-173909.png" width="512px"/>
+<img src="https://i.ibb.co/8M8jqPB/Screenshot-2023-02-21-173909.png" width="512px"/>
