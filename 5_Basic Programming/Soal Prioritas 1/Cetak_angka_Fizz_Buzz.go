@@ -1,6 +1,6 @@
 package main
 
-//ini komentar 2nd
+//ini komentar untuk testing
 
 import "fmt"
 
