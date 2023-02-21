@@ -13,3 +13,6 @@
     - 3_Soal_Testing_Documentation
     - seterusnya sesuai dengan nama soal yang kalian kerjakan. buat folder tersebut sampai soal rest API.
 <img src="https://i.ibb.co/8M8jqPB/Screenshot-2023-02-21-173909.png" width="512px"/>
+
+4. pada setiap folder akan berisikan sub folder lagi seperti berikut
+<img src="https://i.ibb.co/KKGWgBN/Screenshot-2023-02-21-174237.png" width="512px"/>
