@@ -1,0 +1,3 @@
+1. Array adalah kumpulan nilai yang disimpan dalam satu variabel. Nilai-nilai tersebut dapat diakses dengan indeks, yang dimulai dari nol.
+2. Slice adalah tipe data yang mirip dengan array, namun ukurannya dapat berubah-ubah. Dengan slice, kita dapat menambahkan atau menghapus elemen dari slice tersebut. 
+3. Map adalah tipe data yang memetakan kunci ke nilai. Dengan map, kita dapat mengakses nilai dengan menggunakan kunci yang sesuai. 
