@@ -21,7 +21,9 @@ func (s *student) Encode() string {
 
 	for _, c := range s.name {
 		if c >= 'a' && c <= 'z' {
-			c = 'a' + (c-'a'+3)%26
+			c = 'z' - (c - 'a')
+		} else if c >= 'A' && c <= 'Z' {
+			c = 'Z' - (c - 'A')
 		}
 		nameEncode.WriteRune(c)
 	}
@@ -36,7 +38,9 @@ func (s *student) Decode() string {
 
 	for _, c := range s.nameEncode {
 		if c >= 'a' && c <= 'z' {
-			c = 'a' + (c-'a'+23)%26
+			c = 'z' - (c - 'a')
+		} else if c >= 'A' && c <= 'Z' {
+			c = 'Z' - (c - 'A')
 		}
 		nameDecode.WriteRune(c)
 	}
