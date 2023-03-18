@@ -1,5 +1,5 @@
 1. Create database alta_online_shop.
-<img src="https://i.ibb.co/hykg2nB/Screenshot-2023-03-19-020948.png" width="512px"/>
+<img src="https://i.ibb.co/yNxrXxc/Screenshot-2023-03-19-020948.png" width="512px"/>
 
 2. Dari schema Olshop yang telah kamu kerjakan di, Implementasikanlah menjadi table pada MySQL.
     1. Create table user.
