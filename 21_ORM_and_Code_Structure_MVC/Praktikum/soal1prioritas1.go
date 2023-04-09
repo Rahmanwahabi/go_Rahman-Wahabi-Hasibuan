@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
+	"os"
 	"strconv"
 
 	"github.com/jinzhu/gorm"
@@ -14,6 +16,11 @@ var (
 	DB *gorm.DB
 )
 
+func init() {
+	InitDB()
+	InitialMigration()
+}
+
 type Config struct {
 	DB_Username string
 	DB_Password string
@@ -22,15 +29,10 @@ type Config struct {
 	DB_Name     string
 }
 
-func init() {
-	InitDB()
-	InitialMigration()
-}
-
 func InitDB() {
 	config := Config{
-		DB_Username: "root",
-		DB_Password: "root123",
+		DB_Username: "rahman",
+		DB_Password: "ubuntu",
 		DB_Port:     "3306",
 		DB_Host:     "localhost",
 		DB_Name:     "crud_go",
@@ -77,14 +79,18 @@ func GetUsersController(c echo.Context) error {
 
 // get user by id
 func GetUserController(c echo.Context) error {
-	userID, _ := strconv.Atoi(c.Param("id"))
 	var user User
 
-	if err := DB.First(&user, userID).Error; err != nil {
-		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, "invalid user id")
+	}
+
+	if err := DB.First(&user, id).Error; err != nil {
+		return echo.NewHTTPError(http.StatusNotFound, "user not found")
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"message": "success get user",
+		"message": "success get user by id",
 		"user":    user,
 	})
 }
@@ -105,35 +111,41 @@ func CreateUserController(c echo.Context) error {
 
 // delete user by id
 func DeleteUserController(c echo.Context) error {
-	userID, _ := strconv.Atoi(c.Param("id"))
-	var user User
-
-	if err := DB.First(&user, userID).Error; err != nil {
-		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, "invalid user id")
 	}
-	if err := DB.Delete(&user).Error; err != nil {
-		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+
+	if err := DB.Delete(&User{}, id).Error; err != nil {
+		return echo.NewHTTPError(http.StatusNotFound, "user not found")
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"message": "success delete user",
-		"user":    user,
+		"message": "success delete user by id",
 	})
 }
 
 // update user by id
+// update user by id
 func UpdateUserController(c echo.Context) error {
-	userID, _ := strconv.Atoi(c.Param("id"))
 	var user User
 
-	if err := DB.First(&user, userID).Error; err != nil {
-		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, "invalid user id")
 	}
+
+	if err := DB.First(&user, id).Error; err != nil {
+		return echo.NewHTTPError(http.StatusNotFound, "user not found")
+	}
+
 	c.Bind(&user)
+
 	if err := DB.Save(&user).Error; err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
+
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"message": "success update user",
+		"message": "success update user by id",
 		"user":    user,
 	})
 }
@@ -141,6 +153,14 @@ func UpdateUserController(c echo.Context) error {
 func main() {
 	// create a new echo instance
 	e := echo.New()
+
+	// set the logger output to the Visual Studio terminal
+	logFile, err := os.OpenFile("CONOUT$", os.O_WRONLY, 0)
+	if err != nil {
+		log.Fatal(err)
+	}
+	e.Logger.SetOutput(logFile)
+
 	// Route / to handler function
 	e.GET("/users", GetUsersController)
 	e.GET("/users/:id", GetUserController)
@@ -149,5 +169,5 @@ func main() {
 	e.PUT("/users/:id", UpdateUserController)
 
 	// start the server, and log if it fails
-	e.Logger.Fatal(e.Start(":8000"))
+	e.Logger.Fatal(e.Start(":8080"))
 }
