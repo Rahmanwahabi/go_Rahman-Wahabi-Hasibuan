@@ -1,0 +1,3 @@
+1. Space complexity: ukuran ruang yang dibutuhkan oleh program, diukur dalam jumlah memori yang dibutuhkan. 
+2. Time complexity: ukuran waktu yang dibutuhkan oleh program untuk menyelesaikan suatu masalah. 
+3. Big O notation: merupakan suatu notasi matematika yang digunakan untuk memperkirakan kompleksitas waktu dan ruang yang dibutuhkan oleh suatu program. Notasi ini memudahkan dalam menentukan apakah sebuah program efisien atau tidak. 

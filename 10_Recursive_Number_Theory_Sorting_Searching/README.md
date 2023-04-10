@@ -1,0 +1,11 @@
+Dalam Resume ini, saya akan membahas tentang empat topik penting dalam pemrograman Go, yaitu Recursive, Number Theory, Sorting, dan Searching.
+
+Recursive adalah teknik dalam pemrograman di mana sebuah fungsi dapat memanggil dirinya sendiri untuk menyelesaikan suatu masalah atau tugas. Teknik ini sangat berguna dalam menyelesaikan masalah yang kompleks dan terkadang sulit untuk diselesaikan dengan metode lain. Di Go, Recursive sangat penting dalam menyelesaikan banyak masalah, termasuk masalah matematika, pengolahan data, dan lainnya.
+
+Number Theory adalah bidang matematika yang mempelajari sifat bilangan dan hubungan antara bilangan. Dalam pemrograman, Number Theory sangat penting dalam mengembangkan algoritma dan fungsi yang berhubungan dengan bilangan, seperti pengecekan bilangan prima, penjumlahan bilangan, dan sebagainya. Dalam Go, banyak fungsi dan algoritma Number Theory yang tersedia di dalam bahasa itu sendiri.
+
+Sorting adalah proses pengurutan data dalam urutan tertentu. Ini adalah topik yang sangat penting dalam pemrograman dan terdapat banyak algoritma sorting yang tersedia untuk dipilih. Dalam Go, terdapat beberapa algoritma sorting yang umum digunakan seperti bubble sort, insertion sort, quick sort, dan merge sort. Kita dapat memilih algoritma yang tepat tergantung pada jenis data dan kondisi aplikasi.
+
+Searching adalah proses mencari data tertentu dalam kumpulan data. Ini adalah topik penting dalam pemrograman dan terdapat beberapa algoritma searching yang tersedia, seperti linear search, binary search, dan hashing. Dalam Go, kita dapat menggunakan algoritma searching yang sesuai dengan jenis data dan kondisi aplikasi untuk mempercepat proses pencarian.
+
+Dalam kesimpulannya, Recursive, Number Theory, Sorting, dan Searching adalah topik penting dalam pemrograman Go. Penggunaan teknik Recursive dapat membantu kita menyelesaikan masalah yang kompleks, Number Theory membantu kita dalam mengembangkan algoritma dan fungsi yang berhubungan dengan bilangan, Sorting membantu kita dalam mengurutkan data, dan Searching membantu kita dalam mencari data tertentu dalam kumpulan data. Dalam Go, terdapat banyak alat dan fungsi yang tersedia untuk mendukung pengembangan aplikasi yang efisien dan efektif.

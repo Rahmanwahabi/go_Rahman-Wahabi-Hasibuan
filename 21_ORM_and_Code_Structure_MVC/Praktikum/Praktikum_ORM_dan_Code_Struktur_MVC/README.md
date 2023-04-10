@@ -1,0 +1,1 @@
+untuk folder Praktikum_ORM_dan_Code_Struktur_MVC sudah termasuk Soal prioritas 1 , 2 dan Eksplorasi
