@@ -15,4 +15,3 @@ Dalam pengembangan aplikasi menggunakan Go, penggunaan MVC dapat diimplementasik
 Direktori model untuk menyimpan objek atau struktur data yang digunakan untuk mengelola data dalam database.
 Direktori view untuk menyimpan tampilan atau antarmuka pengguna yang digunakan untuk menampilkan data.
 Direktori controller untuk menyimpan objek atau fungsi yang digunakan untuk mengendalikan alur aplikasi.
->>>>>>> master
