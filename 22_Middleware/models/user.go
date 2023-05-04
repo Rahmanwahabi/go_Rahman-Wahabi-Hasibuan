@@ -43,25 +43,36 @@ func InitDB() {
 
 type User struct {
 	gorm.Model
-	Name     string `json:"name" form:"name"`
-	Email    string `json:"email" form:"email"`
-	Password string `json:"password" form:"password"`
+	Name     string `json:"name" form:"Name"`
+	Email    string `json:"email" form:"Email"`
+	Password string `json:"password" form:"Password"`
+}
+
+type UserResponse struct {
+	gorm.Model
+
+	ID    uint64 `json:"id" form:"Name"`
+	Name  string `json:"name" form:"Name"`
+	Email string `json:"email" form:"Email"`
+	Token string `json:"token" form:"Token"`
 }
 
 type Book struct {
 	gorm.Model
-	Title     string `json:"title" form:"title"`
-	Author    string `json:"author" form:"author"`
-	Publisher string `json:"publisher" form:"publisher"`
+	Name     string `json:"name" form:"Name"`
+	Email    string `json:"email" form:"Email"`
+	Password string `json:"password" form:"Password"`
 }
 
-type Blog struct {
+type BookResponse struct {
 	gorm.Model
-	Iduser  string `json:"Iduser" form:"Iduser"`
-	Title   string `json:"title" form:"title"`
-	Content string `json:"content" form:"content"`
+
+	ID    uint64 `json:"id" form:"Name"`
+	Name  string `json:"name" form:"Name"`
+	Email string `json:"email" form:"Email"`
+	Token string `json:"token" form:"Token"`
 }
 
 func InitialMigration() {
-	DB.AutoMigrate(&User{}, &Book{}, &Blog{})
+	DB.AutoMigrate(&User{}, &Book{})
 }
