@@ -20,6 +20,8 @@ func main() {
 	// Run migrations
 	models.InitialMigration()
 
+	e.Use(middleware.Logger())
+
 	// create new UserController instance and pass DB connection
 	userController := controllers.UserController{DB: models.DB}
 	bookController := controllers.BookController{DB: models.DB}
