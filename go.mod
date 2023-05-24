@@ -9,6 +9,7 @@ require (
 	github.com/labstack/echo/v4 v4.10.2
 	github.com/stretchr/testify v1.8.2
 	gorm.io/driver/mysql v1.5.0
+	gorm.io/driver/sqlite v1.5.1
 	gorm.io/gorm v1.25.1
 )
 
