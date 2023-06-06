@@ -1,13 +1,16 @@
-Penggunaan Docker dalam pengembangan aplikasi dengan Go (Golang) dapat memberikan sejumlah manfaat signifikan. Berikut adalah beberapa poin penting yang perlu dipahami tentang penggunaan Docker di Golang:
+disini saya menggunkan 2 platfrom yaitu :
+AWS (Amazon Web Services):
 
-Pengelolaan Dependensi: Docker memungkinkan para pengembang Go untuk mengelola dependensi aplikasi dengan lebih efektif. Dengan menggunakan Docker, semua dependensi dapat dipaketkan ke dalam kontainer, yang memastikan bahwa lingkungan pengembangan dan produksi memiliki semua dependensi yang dibutuhkan tanpa perlu menginstal atau mengonfigurasi secara manual.
+AWS menyediakan layanan cloud computing yang luas, termasuk Amazon Elastic Compute Cloud (EC2) untuk menjalankan aplikasi.
+Untuk melakukan deployment aplikasi Golang di AWS EC2, Anda dapat membuat instance EC2, mengonfigurasi lingkungan server, dan menginstal Golang pada instance tersebut.
+Setelah itu, Anda dapat mengunggah kode Golang Anda ke instance EC2 dan menjalankannya dengan menggunakan perintah go run atau mengompilasi menjadi file biner dan menjalankannya secara langsung.
+Google Cloud:
 
-Lingkungan Pengembangan yang Terisolasi: Dalam pengembangan Go, Docker dapat digunakan untuk membuat lingkungan pengembangan yang terisolasi. Setiap proyek Go dapat ditempatkan dalam wadah Docker yang terpisah, dengan konfigurasi dan dependensi yang terkait. Hal ini membantu mencegah konflik antara proyek yang berbeda dan memungkinkan para pengembang untuk bekerja dalam lingkungan yang konsisten.
+Google Cloud juga menyediakan layanan komputasi cloud, termasuk Google Compute Engine (GCE) untuk menjalankan aplikasi.
+Untuk deployment aplikasi Golang di Google Cloud, Anda dapat membuat instance GCE, mengonfigurasi lingkungan server, dan menginstal Golang pada instance tersebut.
+Selanjutnya, Anda dapat mengunggah kode Golang Anda ke instance GCE dan menjalankannya dengan menggunakan perintah go run atau mengompilasi menjadi file biner dan menjalankannya secara langsung.
+Sekarang, baik di AWS maupun di Google Cloud, Anda juga dapat menggunakan layanan manajemen kontainer seperti AWS Elastic Container Service (ECS) atau Google Kubernetes Engine (GKE) untuk deployment yang lebih canggih. Dalam pendekatan ini, Anda akan membangun dan mengemas aplikasi Golang Anda menjadi container Docker yang dapat dijalankan di lingkungan yang dikelola secara otomatis oleh platform cloud.
 
-Portabilitas Aplikasi: Dengan Docker, aplikasi Go dapat dipaketkan ke dalam kontainer yang independen dan dapat dijalankan di berbagai lingkungan. Ini memastikan portabilitas yang tinggi, sehingga aplikasi dapat dengan mudah dijalankan di mesin pengembangan, pengujian, dan produksi yang berbeda tanpa perlu memperhatikan perbedaan konfigurasi sistem.
+Selain itu, AWS dan Google Cloud menyediakan beragam layanan lain yang dapat Anda manfaatkan untuk memperluas dan mengelola aplikasi Golang, seperti penyimpanan data, panggilan API, manajemen sumber daya, dan masih banyak lagi.
 
-Skalabilitas dan Distribusi: Docker memungkinkan para pengembang untuk dengan mudah mengelola dan mendistribusikan aplikasi Go dalam lingkungan yang skala besar. Dengan menggunakan alat orkestrasi seperti Kubernetes, aplikasi Go dalam kontainer Docker dapat dijalankan di beberapa host dengan konfigurasi yang terkelola dengan baik.
-
-Pengujian: Docker memungkinkan pengembang Go untuk membuat lingkungan pengujian yang terisolasi dan konsisten. Dengan mengemas aplikasi Go ke dalam kontainer Docker, pengujian dapat dilakukan dalam lingkungan yang sama persis dengan produksi, memastikan keandalan dan akurasi hasil pengujian.
-
-Dalam pengembangan aplikasi dengan Go, penggunaan Docker dapat meningkatkan efisiensi, kekonsistenan, portabilitas, dan skala aplikasi. Dengan memanfaatkan kekuatan dan fitur Docker, pengembang Go dapat mengoptimalkan siklus pengembangan perangkat lunak dan mengurangi masalah yang terkait dengan konfigurasi dan dependensi.
+Penting untuk mencatat bahwa proses deployment dapat lebih kompleks tergantung pada persyaratan dan arsitektur aplikasi Anda. Jadi, pastikan Anda merujuk pada dokumentasi resmi dari AWS dan Google Cloud untuk panduan yang lebih mendalam dan detail mengenai deployment di platform mereka masing-masing.
