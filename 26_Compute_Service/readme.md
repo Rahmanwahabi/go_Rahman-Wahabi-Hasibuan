@@ -1,3 +1,19 @@
+Compute Service di Golang adalah kemampuan untuk mengelola komputasi dan pemrosesan dalam bahasa pemrograman Go. Golang menyediakan berbagai fitur dan pustaka yang memungkinkan pengembang untuk membuat dan mengelola layanan komputasi yang efisien dan skalabel.
+
+Beberapa poin penting tentang Compute Service di Golang:
+
+Concurrency: Golang memiliki dukungan bawaan untuk konkurensi yang kuat. Dengan menggunakan goroutine dan channel, pengembang dapat membuat aplikasi yang dapat menjalankan banyak tugas secara paralel, meningkatkan kinerja dan efisiensi pemrosesan.
+
+Pengelolaan Memori: Golang memiliki manajemen memori yang efisien dengan garbage collector (GC) yang canggih. GC secara otomatis mengelola alokasi dan pemulihan memori yang tidak lagi digunakan, mengurangi beban tugas pengembang.
+
+Pustaka dan Framework: Golang memiliki berbagai pustaka dan framework yang membantu pengembang dalam membuat layanan komputasi. Beberapa pustaka populer termasuk net/http untuk pengembangan web, database/sql untuk interaksi dengan database, dan banyak lagi.
+
+Skalabilitas: Golang dirancang untuk skalabilitas. Kemampuan konkurensi yang kuat dan manajemen memori yang efisien memungkinkan aplikasi untuk menangani lalu lintas yang tinggi dengan performa yang baik.
+
+Deployment: Golang memungkinkan pengembang untuk dengan mudah mendeploy aplikasi mereka. Dalam Golang, aplikasi dikompilasi menjadi file biner yang dapat dieksekusi secara independen, membuat proses deployment menjadi lebih sederhana.
+
+Secara keseluruhan, Compute Service di Golang memberikan pengembang alat yang kuat dan efisien untuk mengelola komputasi dan pemrosesan. Dengan dukungan konkurensi, manajemen memori yang baik, pustaka yang kaya, dan kemampuan deployment yang mudah, Golang menjadi pilihan yang baik untuk membangun layanan komputasi yang skalabel dan efisien.
+
 disini saya menggunkan 2 platfrom yaitu :
 AWS (Amazon Web Services):
 
